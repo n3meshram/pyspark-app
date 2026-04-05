@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: pyspark-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: pyspark
+        image: 735263431546.dkr.ecr.ap-south-1.amazonaws.com/pyspark-demo:latest
+      imagePullSecrets:
+      - name: ecr-secret
+      restartPolicy: Never

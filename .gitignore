@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env (if used later)
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Jenkins
+*.jenkins
+
+# Docker
+*.tar
+
+# Terraform (future use)
+*.tfstate
+*.tfstate.backup
+
+# AWS credentials (VERY IMPORTANT)
+.aws/
+
+# kubeconfig (optional)
+.kube/
+
+# IDE files
+.vscode/
+.idea/
