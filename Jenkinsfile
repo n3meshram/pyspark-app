@@ -40,10 +40,14 @@ pipeline {
             }
         }
 
-        stage('Deploy to Kubernetes') {
-            steps {
-                bat 'kubectl apply -f job.yaml'
-            }
-        }
+    stage('Deploy to Kubernetes') {
+    steps {
+        bat '''
+        set KUBECONFIG=C:\\Users\\Nitin\\.kube\\config
+        kubectl apply -f job.yaml
+        '''
     }
 }
+    }
+}
+                              
